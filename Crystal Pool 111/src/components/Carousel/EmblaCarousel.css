@@ -1,0 +1,26 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  text-align: center;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.embla__slide img {
+  margin-top: 180px;
+  width: 100rem;
+  height: 50rem;
+
+  @media (max-width: 992px) {
+    width: 80%;
+    height: 18rem;
+  }
+  @media (max-width: 767px) {
+    width: 80%;
+    height: 18rem;
+  }
+}
