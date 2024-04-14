@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartLine,
   faShieldHalved,
-  faChartArea,
   faHelmetSafety,
 } from "@fortawesome/free-solid-svg-icons";
 
