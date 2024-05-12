@@ -1,63 +1,103 @@
 import React from "react";
-
-import "./Home.css";
-import BannerImage from "../../assets/banner/banner-img.jpg";
-import LogoImage from "../../assets/logo/logo.png";
+import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChartLine,
-  faShieldHalved,
-  faHelmetSafety,
+  faTruckFast,
+  faPhone,
+  faClipboardList,
 } from "@fortawesome/free-solid-svg-icons";
+import AboutImage from "../../assets/about/about_img.jpg";
 
-export default function Home() {
+export default function About() {
   // Icons
-  const faChartIcon = <FontAwesomeIcon icon={faChartLine} />;
-  const faShieldIcon = <FontAwesomeIcon icon={faShieldHalved} />;
-  const faChartAreaIcon = <FontAwesomeIcon icon={faHelmetSafety} />;
+  const faBusinessIcon = <FontAwesomeIcon icon={faPhone} />;
+  const faChartPieIcon = <FontAwesomeIcon icon={faClipboardList} />;
+  const faTruckFastIcon = <FontAwesomeIcon icon={faTruckFast} />;
+  const faPhoneIcon = <FontAwesomeIcon icon={faPhone} />;
 
   return (
     <>
-      <section id="home">
-        <div className="banner_image"></div>
-        <div className="container">
-          <div className="banner_outer">
-            <div className="col" id="col1">
-              <div className="logo_image">
-                <img className="logo1" src={LogoImage} alt="Logo_image" />
+      <section id="about">
+        <div class="container">
+          <div className="title_headling">
+            <h3>Du rêve à la réalité en quelques pas</h3>
+            <p className="description1">
+              Chaque projet est perçu comme un défi unique, et l'intégralité du
+              processus sera gérée par notre équipe.
+            </p>
+          </div>
+          <div className="about_box_wrapper">
+            <div className="about_box">
+              <div className="about_icon">{faBusinessIcon}</div>
+              <div className="about_content">
+                <h5>Devis</h5>
+                <p>
+                  Il évaluera attentivement vos besoins spécifiques et vous
+                  proposera des solutions personnalisées pour répondre à vos
+                  attentes. Notre technicien qualifié saura vous guider à
+                  travers les différentes options disponibles et vous aidera à
+                  choisir ce qui convient le mieux à votre situation. N'hésitez
+                  pas à poser toutes vos questions et à exprimer vos
+                  préoccupations, notre objectif est de vous offrir un service
+                  sur mesure et de qualité.
+                </p>
               </div>
-              <p>
-                Que vous ayez des exigences spécifiques en termes de profondeur
-                ou de longueur, que vous recherchiez un système de traitement de
-                l'eau personnalisé, la possibilité de contrôler votre piscine
-                via votre smartphone ou une fonction de lavage automatique,
-                toutes vos demandes sont réalisables. De la conception initiale
-                à la finalisation du projet, vous bénéficierez d'un
-                interlocuteur unique et d'une équipe de professionnels dévoués,
-                garantissant une collaboration simple et efficace.
-              </p>
-              <div className="btn_wrapper">
-                <a className="btn" href="#contact">
-                  Devis Gratuit
+            </div>
+            <div className="about_box">
+              <div className="about_icon green_icon">{faChartPieIcon}</div>
+              <div className="about_content">
+                <h5>Prise de contact</h5>
+                <p>
+                  Étant donné que chaque projet est singulier, il est impératif
+                  d'organiser une visite sur le site de construction. Veuillez
+                  indiquer votre mode de communication privilégié, et notre
+                  responsable des ventes vous contactera promptement pour
+                  convenir d'un rendez-vous.
+                </p>
+              </div>
+            </div>
+            <div className="about_box">
+              <div className="about_icon blue_icon">{faTruckFastIcon}</div>
+              <div className="about_content">
+                <h5>Services pendant et après</h5>
+                <p>
+                  Notre engagement ne se limite pas à la conclusion des travaux
+                  de construction de votre piscine. Nous vous offrons un suivi
+                  après la finalisation du chantier pour vous accompagner dans
+                  la gestion de votre nouvelle installation. Notre équipe est
+                  disponible pour vous assister, vous permettant ainsi de
+                  maîtriser pleinement les divers systèmes pour garantir le bon
+                  fonctionnement de votre bassin (chauffage, entretien,
+                  sécurité, etc.).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="about_box_details">
+            <div className="about_col">
+              <div className="about_image">
+                <img src={AboutImage} alt="about" className="about_main" />
+              </div>
+              <div className="img_info__box">
+                <h6 className="img_info__title">
+                  Demandez votre devis aujourd’hui
+                </h6>
+                <p>
+                  Nemo enim ipsam oluptatem quia oluptas <br />
+                  sit aspernatur aut odit aut fugit.
+                </p>
+                <a href="/">
+                  {faPhoneIcon} <span>xxxx xxx xxx</span>
                 </a>
               </div>
             </div>
-            <div className="col">
-              <div className="sub_banner_image" id="col2">
-                <img src={BannerImage} alt="Banner_image" />
-              </div>
-              <div className="banner_style_1">
-                {faChartIcon}
-                <h4>Efficacité</h4>
-              </div>
-              <div className="banner_style_1 banner_style_2">
-                {faShieldIcon}
-                <h4>Durabilité</h4>
-              </div>
-              <div className="banner_style_1 banner_style_3">
-                {faChartAreaIcon}
-                <h4>Sécurité</h4>
-              </div>
+            <div className="about_col more_space">
+              <h3>Nos réalisations</h3>
+              <p>
+                Certains nous ont accordé leur confiance. Découvrez quelques
+                exemples en images de nos réalisations de haute qualité.
+              </p>
             </div>
           </div>
         </div>
