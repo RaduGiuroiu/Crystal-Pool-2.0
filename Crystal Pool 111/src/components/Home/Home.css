@@ -74,6 +74,12 @@
       }
     }
 
+    #col2 {
+      @media (max-width: 767px) {
+        width: 380px;
+      }
+    }
+
     #col1 {
       width: calc(100% / 2 - 15px);
       height: auto;
