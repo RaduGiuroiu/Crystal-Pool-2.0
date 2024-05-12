@@ -2,17 +2,18 @@ import React from "react";
 import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChartPie,
   faTruckFast,
   faPhone,
-  faMoneyBillWaveAlt,
+  faNewspaper,
+  faClipboard,
+  faClipboardList,
 } from "@fortawesome/free-solid-svg-icons";
 import AboutImage from "../../assets/about/about_img.jpg";
 
 export default function About() {
   // Icons
-  const faBusinessIcon = <FontAwesomeIcon icon={faMoneyBillWaveAlt} />;
-  const faChartPieIcon = <FontAwesomeIcon icon={faChartPie} />;
+  const faBusinessIcon = <FontAwesomeIcon icon={faPhone} />;
+  const faChartPieIcon = <FontAwesomeIcon icon={faClipboardList} />;
   const faTruckFastIcon = <FontAwesomeIcon icon={faTruckFast} />;
   const faPhoneIcon = <FontAwesomeIcon icon={faPhone} />;
 
@@ -31,20 +32,7 @@ export default function About() {
             <div className="about_box">
               <div className="about_icon">{faBusinessIcon}</div>
               <div className="about_content">
-                <h5>Prise de contact</h5>
-                <p>
-                  Étant donné que chaque projet est singulier, il est impératif
-                  d'organiser une visite sur le site de construction. Veuillez
-                  indiquer votre mode de communication privilégié, et notre
-                  responsable des ventes vous contactera promptement pour
-                  convenir d'un rendez-vous.
-                </p>
-              </div>
-            </div>
-            <div className="about_box">
-              <div className="about_icon green_icon">{faChartPieIcon}</div>
-              <div className="about_content">
-                <h5>Rendez-vous avec notre technicien</h5>
+                <h5>Devis</h5>
                 <p>
                   Il évaluera attentivement vos besoins spécifiques et vous
                   proposera des solutions personnalisées pour répondre à vos
@@ -54,6 +42,19 @@ export default function About() {
                   pas à poser toutes vos questions et à exprimer vos
                   préoccupations, notre objectif est de vous offrir un service
                   sur mesure et de qualité.
+                </p>
+              </div>
+            </div>
+            <div className="about_box">
+              <div className="about_icon green_icon">{faChartPieIcon}</div>
+              <div className="about_content">
+                <h5>Prise de contact</h5>
+                <p>
+                  Étant donné que chaque projet est singulier, il est impératif
+                  d'organiser une visite sur le site de construction. Veuillez
+                  indiquer votre mode de communication privilégié, et notre
+                  responsable des ventes vous contactera promptement pour
+                  convenir d'un rendez-vous.
                 </p>
               </div>
             </div>
