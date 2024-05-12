@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Home.css";
 import BannerImage from "../../assets/banner/banner-img.jpg";
+import LogoImage from "../../assets/logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartLine,
@@ -21,11 +22,8 @@ export default function Home() {
         <div className="banner_image"></div>
         <div className="container">
           <div className="banner_outer">
-            <div className="col">
-              <h2 className="title">
-                <span>Crystal Pool</span> se spécialise dans la construction de
-                piscines haut de gamme.
-              </h2>
+            <div className="col" id="col1">
+              <img src={LogoImage} alt="logo_image" />
               <p>
                 Que vous ayez des exigences spécifiques en termes de profondeur
                 ou de longueur, que vous recherchiez un système de traitement de
