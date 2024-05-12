@@ -18,7 +18,7 @@
     }
 
     @media (max-width: 767px) {
-      width: 100%;
+      width: 350px;
     }
   }
   .logo1 {
@@ -70,6 +70,7 @@
       }
       @media (max-width: 767px) {
         padding: 1.5rem;
+        width: 380px;
       }
     }
 
@@ -118,6 +119,11 @@
       padding-top: 2rem;
 
       @media (max-width: 992px) {
+        width: 130%;
+        text-align: center;
+      }
+
+      @media (max-width: 767px) {
         width: 100%;
         text-align: center;
       }
