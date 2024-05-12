@@ -43,7 +43,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col">
-              <div className="sub_banner_image">
+              <div className="sub_banner_image" id="col2">
                 <img src={BannerImage} alt="Banner_image" />
               </div>
               <div className="banner_style_1">
