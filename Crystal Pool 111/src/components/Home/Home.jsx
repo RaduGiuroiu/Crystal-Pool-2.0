@@ -23,7 +23,9 @@ export default function Home() {
         <div className="container">
           <div className="banner_outer">
             <div className="col" id="col1">
-              <img src={LogoImage} alt="logo_image" />
+              <div className="logo_image">
+                <img className="logo1" src={LogoImage} alt="Logo_image" />
+              </div>
               <p>
                 Que vous ayez des exigences spécifiques en termes de profondeur
                 ou de longueur, que vous recherchiez un système de traitement de
