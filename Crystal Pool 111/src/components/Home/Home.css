@@ -76,7 +76,8 @@
         padding: 8rem;
       }
       @media (max-width: 767px) {
-        padding: 8rem;
+        padding-top: 8rem;
+        width: fit-content;
         height: fit-content;
       }
     }
