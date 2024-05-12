@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTruckFast,
   faPhone,
-  faNewspaper,
-  faClipboard,
   faClipboardList,
 } from "@fortawesome/free-solid-svg-icons";
 import AboutImage from "../../assets/about/about_img.jpg";
